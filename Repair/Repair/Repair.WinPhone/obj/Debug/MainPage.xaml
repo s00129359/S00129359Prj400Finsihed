@@ -1,0 +1,85 @@
+﻿<Page
+    x:Class="Repair.WinPhone.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Repair.WinPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#FFD3FFF5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <HyperlinkButton x:ConnectionId='1' Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Content="Edit Profile" Background="#FF7082F0"                                 Foreground="White"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="1" FontSize="25" VerticalAlignment="Center" Foreground="#FF102E97" FontWeight="Bold">First Name:</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="1" FontSize="25" VerticalAlignment="Center" Foreground="#FF102E97" FontWeight="Bold">
+            	<Run Text="Second Name:"/>
+        </TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="1" FontSize="25" VerticalAlignment="Center" Foreground="#FF102E97" FontWeight="Bold">
+            	<Run Text="Address:"/>
+        </TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="1" FontSize="25" VerticalAlignment="Center" Foreground="#FF102E97" FontWeight="Bold">
+            	<Run Text="County:"/>
+        </TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="1" FontSize="25" VerticalAlignment="Center" Foreground="#FF102E97" FontWeight="Bold">
+            	<Run Text="Mobile:"/>
+        </TextBlock>
+        <TextBlock Grid.Row="6" Grid.Column="1" FontSize="25" VerticalAlignment="Center" Foreground="#FF102E97" FontWeight="Bold">
+            	<Run Text="Email:"/>
+        </TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="1" FontSize="25" VerticalAlignment="Center" Foreground="#FF102E97" FontWeight="Bold">
+            	<Run Text="Landline:"/>
+        </TextBlock>
+        
+        <!--ds-->
+
+        <TextBlock Grid.Row="1" Grid.Column="2" Name="tbFirstName" FontSize="25" VerticalAlignment="Center" Foreground="#FF0D3F72">First Name:</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="2"  Name="tbSecondName" FontSize="25" VerticalAlignment="Center" Foreground="#FF0D3F72">
+            	<Run Text="Second Name:"/>
+        </TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="2"  Name="tbAddress" FontSize="25" VerticalAlignment="Center" Foreground="#FF0D3F72">
+            	<Run Text="Address:"/>
+        </TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="2"  Name="tbCounty" FontSize="25" VerticalAlignment="Center" Foreground="#FF0D3F72">
+            	<Run Text="County:"/>
+        </TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="2"  Name="tbMobile" FontSize="25" VerticalAlignment="Center" Foreground="#FF0D3F72">
+            	<Run Text="Mobile:"/>
+        </TextBlock>
+        <TextBlock Grid.Row="6" Grid.Column="2"  Name="tbEmail" FontSize="25" VerticalAlignment="Center" Foreground="#FF0D3F72">
+            	<Run Text="Email:"/>
+        </TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="2"  Name="tbLandLine" FontSize="25" VerticalAlignment="Center" Foreground="#FF0D3F72">
+            	<Run Text="Landline:"/>
+        </TextBlock>
+
+        <TextBlock Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFF30D0D" FontWeight="Bold" FontStyle="Italic">
+            	<Run Text="Your Reports:"/>
+            </TextBlock>
+        <ListBox x:ConnectionId='2' Grid.Row="9" Grid.ColumnSpan="2" Grid.Column="1"  Name="lsbReports" FontSize="25" FontWeight="Bold" RequestedTheme="Dark" Background="#CCEEA9A9"                                               ></ListBox>
+        <HyperlinkButton x:ConnectionId='3' Name="btnGo" IsEnabled="False" HorizontalAlignment="Stretch" Grid.Row="10" Grid.ColumnSpan="2" Grid.Column="1"  Content="Choose Report"                                 Background="#FF26B606"/>
+
+        </Grid>
+
+</Page>
+
